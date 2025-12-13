@@ -9,8 +9,6 @@
     TODO dynamic controls
         - populated from detected/requested platform
 
-    TODO switch (different tool?):
-        https://wiki.freebsd.org/NetworkFirewalls/WatchguardFireboxM270
 */
 
 #include <sys/io.h>
