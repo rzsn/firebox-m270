@@ -119,6 +119,40 @@ Initial development can be done with help of an USB-to-RJ45 dongle (USB NIC).
 
 ref: https://wiki.freebsd.org/NetworkFirewalls/WatchguardFireboxM270
 
+### Fan
+
+The unit has a single 40mm fan that spins at various speeds during the post/pre-boot and boot/runtime.
+This way one can tell when the memory training had completed.
+
+I have replaced the noisy fan with a Noctua NF-A4x20 fan.
+The two screws that hold the fan are different than for the original fan.
+The zip-tie that held the original longer cable was cut and thrown away.
+
+The mainboard has a non-standard 5-pin connector for the fan.
+I have used an off the shelf 5-pin housing,
+pulled the Noctua fan wires from its housing
+and inserted it to the new housing.
+The cable length of NF-A4x20 is just right for the spot where the connector is.
+
+The wiring between 4 and 5 pin is simple all wires are in order,
+but there is a free spot between the TACHO and PWM signals:
+
+| Pin | Signal | Original fan | Noctua fan |
+| --- | ---  | ---    | ---    |
+| 1 | GND    | black  | black  |
+| 2 | +12V   | red    | yellow |
+| 3 | TACHO  | yellow | green  |
+| 4 | -      | -      | -      |
+| 5 | RPM    | blue   | blue   |
+
+The fan RPM can be seen in the bios, and there is also a setting for manual PWM.
+
+The PWM of the fan can be controlled by lm-sensors and fancontrol.
+A quiet fancontrol profile is included in this repo for the Noctua fan.
+The temperature sense for this comes from the CPU package temperature.
+
+Overall, with 10W total system power consumption observed the CPU barely gets hot.
+But having some airflow helps to keep the temperature below 40°C.
 
 ### Intel QAT - QuickAssist Technology
 
