@@ -551,6 +551,12 @@ This GPL code was never released by WatchGuard - not for the extra modules nor f
 
 # Other links
 
+* Distributed Switch Architecture, A.K.A. DSA
+
+  * https://netdevconf.info/2.1/papers/distributed-switch-architecture.pdf
+  * https://netdevconf.org/2.1/slides/apr6/lunn-dsa-netdev-2.1.pdf
+
+
 * FreeBSD / NetworkFirewalls / WatchguardFireboxM270
 
   * https://wiki.freebsd.org/NetworkFirewalls/WatchguardFireboxM270
@@ -562,6 +568,11 @@ This GPL code was never released by WatchGuard - not for the extra modules nor f
   * https://forum.netgate.com/topic/154974/pfsense-on-watchguard-m270/3
 
 
+* OPNsense Forum - Support for Intel X553 NIC and Marvell 88E6190 switch (WatchGuard Firebox M270)
+
+  * https://forum.opnsense.org/index.php?topic=32991.0
+  * https://github.com/opnsense/src/issues/232
+
 * Watchguard M270 Ethernet Ports
 
   * https://www.reddit.com/r/linuxhardware/comments/10ppldo/watchguard_m270_ethernet_ports/
@@ -570,3 +581,9 @@ This GPL code was never released by WatchGuard - not for the extra modules nor f
 * #openwrt-devel / WatchGuard XTM330 - also uses DSA and violates GPL
 
   * https://oftc.catirclogs.org/openwrt-devel/2021-09-20#
+
+
+* mdio-tools - ERROR: Unable to read status (-110) with Marvell 88e6190x on x86
+
+  * https://github.com/wkz/mdio-tools/issues/35
+
