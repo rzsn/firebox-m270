@@ -551,6 +551,11 @@ This GPL code was never released by WatchGuard - not for the extra modules nor f
 
 # Other links
 
+* Intel®Atom™ Processor C3000 Product Family Integrated 10 GbE LAN Controller Programmer's Reference Manual (PRM)
+
+  * https://www.intel.com/content/www/us/en/content-details/338653/intel-atom-processor-c3000-product-family-integrated-10-gbe-lan-controller-programmer-s-reference-manual-prm.html
+
+
 * Distributed Switch Architecture, A.K.A. DSA
 
   * https://netdevconf.info/2.1/papers/distributed-switch-architecture.pdf
